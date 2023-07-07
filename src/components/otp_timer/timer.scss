@@ -1,0 +1,29 @@
+.timer_container{
+h1{
+    color: red;
+}
+
+.code_input_group{
+    
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+.button_group{
+    button{
+        margin: 0 20px;
+        width: 100px;
+        height: 40px;
+        border-radius: 10px;
+        font-weight: 500;
+
+    }
+    .clear_button{
+        background: transparent;
+        color: white;
+        border: 1px solid white;
+    }
+}
+
+    
+}

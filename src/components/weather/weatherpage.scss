@@ -1,0 +1,31 @@
+h1{
+    color: white;
+}
+
+.result-container{
+    display: flex;
+
+.result-child{
+    color: white;
+    margin: 30px ;
+    border: 2px solid white;
+    font-size: 20px;
+    padding: 10px;
+    text-align: left;
+}
+div{
+    color: white;
+}
+}
+
+.detail_page{
+    color: white;
+    .detail_contain{
+        display: inline-flex;
+        justify-content: space-between;
+        margin: 30px;
+        min-width: 400px;
+        padding: 10px;
+        border: 2px solid white;
+    }
+}

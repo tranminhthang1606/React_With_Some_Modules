@@ -1,0 +1,166 @@
+.container {
+    position: relative;
+
+    .product-container {
+        padding: 30px 10px;
+        display: flex;
+
+        .product_gallery {
+            width: 40%;
+
+            .img_up {
+                padding: 20px;
+
+                img {
+                    width: 400px;
+                    border-radius: 10px;
+                }
+            }
+
+            .img_down {
+                margin: 20px 0 0 0;
+                display: flex;
+                justify-content: space-around;
+
+                img {
+                    cursor: pointer;
+                    width: 100px;
+                    border-radius: 10px;
+                }
+            }
+        }
+
+        .product_details_container {
+
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            align-items: first baseline;
+            border: 2px solid white;
+            color: white;
+            padding: 10px;
+
+            div {
+                margin: 10px 0;
+            }
+            .catalog{
+                color: rgb(96, 90, 90);
+                font-size: 10px;
+
+            }
+            .product_name{
+                color: red;
+                font-size: 30px;
+            }
+            .product_button{
+                width: 100%;
+                button{
+                    width: 500px;
+                    height: 50px;
+                    border: none;
+                    background: orangered;
+                    border-top-left-radius: 10px;
+                    border-bottom-right-radius: 10px;
+                    font-size: 20px;
+                    font-weight: 700;
+                    color: white;
+                }
+            }
+        }
+
+    }
+
+    .preview_img {
+        position: fixed;
+        display: none;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+
+        /* Black w/ opacity */
+        .modal-content {
+            max-width: 700px;
+            width: 80%;
+            margin: auto;
+            padding: 10px;
+            animation-name: fade;
+            animation-duration: 1.5s;
+
+            @keyframes fade {
+                from {
+                    opacity: .4
+                }
+
+                to {
+                    opacity: 1
+                }
+            }
+        }
+
+        .modal-content,
+        #caption {
+            animation-name: zoom;
+            animation-duration: 0.6s;
+        }
+
+        @keyframes zoom {
+            from {
+                transform: scale(0)
+            }
+
+            to {
+                transform: scale(1)
+            }
+        }
+
+        /* The Close Button */
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 30px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            text-decoration: none;
+        }
+
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        .prev {
+            left: 0;
+            border-radius: 3px 0 0 3px;
+        }
+    }
+
+
+
+}
